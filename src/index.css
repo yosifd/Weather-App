@@ -22,6 +22,15 @@ main {
   min-height: 100vh;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.75));
   padding: 25px;
+  background: -moz-linear-gradient(rgba(0, 0, 0, 0.2), transparent); /* FF 3.6+ */  
+  background: -ms-linear-gradient(rgba(0, 0, 0, 0.2), transparent); /* IE10 */  
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.2)), color-stop(100%, #ffffff)); /* Safari 4+, Chrome 2+ */  
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), transparent); /* Safari 5.1+, Chrome 10+ */  
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.2), transparent); /* Opera 11.10 */  
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr=transparent); /* IE6 & IE7 */  
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr=transparent)"; /* IE8+ */  
+  background: linear-gradient(rgba(0, 0, 0, 0.2), transparent); /* the standard */  
+  z-index: 1;
 }
 
 .logo {
@@ -35,13 +44,14 @@ main {
 .name {
   color: #FFF;
   font-size: 60px;
-  text-shadow: 3px 3px rgba(0, 255, 213, 0.5);
+  text-shadow: 3px 3px rgba(0, 195, 255, 0.5);
   margin: 0 0 25px;
 }
 
 .search-box {
   width: 35%;
   margin: 0 0 50px;
+  display: flex;
 }
 
 .search-box .search-bar {
@@ -55,8 +65,6 @@ main {
 
   background-color: rgba(255, 255, 255, 0.842);
   border-radius: 20px 20px 20px 20px;
-  /* margin-top: -25px; */
-
   box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
 
   color: #313131;
@@ -68,6 +76,11 @@ main {
 .search-box .search-bar:focus {
   background-color: azure;
   color: rgba(0, 0, 0, 0.8)
+}
+
+.search-icon {
+  width: 40px;
+  margin: 10px;
 }
 
 .location-box .location {
@@ -109,15 +122,11 @@ main {
 .day-row {
   margin-top: 10px;
   font-size: 18px;
+  display: flex;
 }
 
 .date-forecast {
-  /* align-items: center;
-  justify-content: center;
-  text-align: center; */
   font-size: 24px;
-  float: left;
-
   transform: translate(10%, 0%);
 }
 
@@ -129,7 +138,7 @@ main {
   box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
   border-radius: 16px;
 
-  transform: translate(-35%, 8%);
+  transform: translate(-45%, 8%);
   width: 220px;
   height: 155px;
 
@@ -165,7 +174,6 @@ main {
   text-align: center;
   box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
 }
-
 
 .weather-box .weather {
   color: #FFF;

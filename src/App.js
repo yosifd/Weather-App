@@ -15,7 +15,7 @@ function App() {
   const [forecast, setForecast] = useState({});
 
   const search = evt => {
-    if (evt.key === "Enter") {
+    if (evt.key === "Enter" || evt === "Enter") {
       fetch(`${api.base}weather?q=${query}&unit=metric&APPID=${api.key}`)
         .then(res => res.json())
         .then(result => {
@@ -102,6 +102,12 @@ function App() {
           onChange={e => setQuery(e.target.value)}
           value={query}
           onKeyPress={search}
+          />
+          <img 
+            className="search-icon" 
+            src="https://www.flaticon.com/svg/vstatic/svg/639/639375.svg?token=exp=1611396870~hmac=55bab476600e6464eac4c23155271a09" 
+            alt=" " 
+            onClick={() => search("Enter")}
           />
         </div>
         {(typeof weather.main != "undefined") ? (
