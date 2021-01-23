@@ -105,7 +105,7 @@ function App() {
           />
           <img 
             className="search-icon" 
-            src="https://www.flaticon.com/svg/vstatic/svg/639/639375.svg?token=exp=1611396870~hmac=55bab476600e6464eac4c23155271a09" 
+            src="https://www.flaticon.com/svg/static/icons/svg/639/639375.svg" 
             alt=" " 
             onClick={() => search("Enter")}
           />
