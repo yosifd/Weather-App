@@ -9,6 +9,7 @@ body {
   background: #365ddc;
   background: -webkit-linear-gradient(to right, #18336d, #36D1DC);
   background: linear-gradient(to right, #07318b, #36D1DC);
+  background-size: auto 100%;
 }
 
 .app {
@@ -22,14 +23,6 @@ main {
   min-height: 100vh;
   background-color: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.75));
   padding: 25px;
-  background: -moz-linear-gradient(rgba(0, 0, 0, 0.2), transparent); /* FF 3.6+ */  
-  background: -ms-linear-gradient(rgba(0, 0, 0, 0.2), transparent); /* IE10 */  
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.2)), color-stop(100%, #ffffff)); /* Safari 4+, Chrome 2+ */  
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), transparent); /* Safari 5.1+, Chrome 10+ */  
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.2), transparent); /* Opera 11.10 */  
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr=transparent); /* IE6 & IE7 */  
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr=transparent)"; /* IE8+ */  
-  background: linear-gradient(rgba(0, 0, 0, 0.2), transparent); /* the standard */  
   z-index: 1;
 }
 
