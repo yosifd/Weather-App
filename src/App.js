@@ -129,7 +129,7 @@ function App() {
       <div>
         {(typeof forecast.city_name != "undefined") ? (
           <div className="forecast-box">
-            4 Day Forecast:
+            <span className="forecast-title">4 Day Forecast:</span>
             <div className="day-row">
               <div className="date-forecast">
                 {dayBuilder(new Date(forecast.data[2].datetime))}
